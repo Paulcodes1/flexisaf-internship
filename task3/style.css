@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #ffffffb3;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  color: #00bcd4;
+}
+
+nav ul li {
+  display: inline;
+  position: relative;
+  top: 0;
+  left: 70%;
+  /* float: right; */
+  margin: 0;
+  
+  list-style-type: none;
+}
+
+nav a {
+  color: #013a40;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #00bcd4;
+  transition: .2s;
+}
+
+.background {
+  background-image: url(./images/bg.avif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 120vh;
+  text-align: center;
+}
+
+.text {
+  position: relative;
+  left: 0;
+  top: 50%;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.text p {
+  font-size: 1.4rem;
+  margin-top: .9rem;
+}
+
+.about {
+  background: linear-gradient(to bottom, #ffffff, #e0f7fa);
+  text-align: center;
+  padding: 6.25rem 8.9rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #013a40;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.rooms {
+  padding: 6.25rem 8.9rem;
+  text-align: center;
+}
