@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2.5rem;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  color: #00bcd4;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  margin: 0;
+  list-style-type: none;
+}
+
+nav a {
+  color: #013a40;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #00bcd4;
+  transition: .2s;
+}
+
+.background {
+  background-image: url(./images/bg.avif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 120vh;
+  text-align: center;
+}
+
+.text {
+  position: relative;
+  left: 0;
+  top: 50%;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.text p {
+  font-size: 1.4rem;
+  margin-top: .9rem;
+}
+
+.about {
+  background: linear-gradient(to bottom, #ffffff, #e0f7fa);
+  text-align: center;
+  padding: 6.25rem 8.9rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #013a40;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.rooms {
+  padding: 5.25rem 8.9rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.rooms h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #013a40;
+}
+
+.rooms img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.ocean-view, .garden-retreat, .beachfront-villa {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 25%;
+  box-shadow: 2px 2px 10px #cccccc;
+}
+
+.rooms-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .9rem;
+  justify-content: center;
+}
+
+.room-content {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.room-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: .6rem;
+  color: #00bcd4;
+}
+
+.room-content p {
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.ocean-view:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.garden-retreat:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.beachfront-villa:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.cta {
+  text-align: center;
+  padding: 6.25rem 8.9rem;
+  color: #ffffff;
+  background-color: #00bcd4;
+}
+
+.cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.cta button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #ffbb33;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(255, 187, 51, 0.4);
+}
+
+.cta a {
+  color: #013a40;
+}
+
+.cta button:hover,.cta a:hover {
+  background-color: #ffffff;
+  color: #00bcd4;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transform: scale(1.01);
+}
+
+footer {
+  background-color: #013a40;
+  color: #eeeeee;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 30px 10%;
+}
+
+/* Using Media query for responsiveness */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .text p {
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  header { 
+    flex-direction: column; 
+    gap: 1rem; 
+  } 
+      
+  nav ul { 
+    flex-direction: column; 
+    gap: .5rem;
+    text-align: center;
+  }
+
+  .about {
+    padding: 4.5rem 3.9rem;
+  }
+
+  .rooms-card {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .ocean-view, .garden-retreat, .beachfront-villa {
+    width: 100%;
+  }
+
+  .rooms {
+    padding: 5.25rem 3.9rem;
+  }
+
+  .cta {
+    padding: 4.5rem 3.9rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .rooms-card {
+    gap: 1.5rem;
+  }
+
+  .ocean-view, .garden-retreat, .beachfront-villa {
+    width: 45%;
+  }
+}

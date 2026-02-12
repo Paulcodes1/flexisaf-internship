@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure Sand Resort | Book</title>
+</head>
+<body>
+  <form onsubmit="alert('Success... We look forward to welcoming you at the resort.')">
+    <fieldset>
+      <legend>Reservation Details</legend>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" value="name">
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" value="email"><br><br>
+
+      <label for="check-in">Check-in Date:</label>
+      <input type="date" id="check-in"><br><br>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" value="1" min="1" max="5"><br><br>
+
+      <p>Select Room Type:</p>
+      <input type="radio" id="ocean-view" name="room-type" value="ocean-view">
+      <label for="ocean-view">Ocean View Suite</label><br>
+      <input type="radio" id="garden-retreat" name="room-type" value="garden-retreat">
+      <label for="garden-retreat">Garden Retreat</label><br>
+      <input type="radio" id="beachfront-villa" name="room-type" value="beachfront-villa">
+      <label for="beachfront-villa">Beachfront Villa</label><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" value="phone"><br><br>
+
+      <input type="checkbox" id="terms" name="terms">
+      <label for="terms"><i>I agree to the terms and conditions</i></label><br><br>
+
+      <input type="submit" value="Book Now">
+    </fieldset>
+  </form>
+</body>
+</html>
