@@ -4,71 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="./style.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Product list with cart</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Desserts
+  <main class="container">
+    <section class="products-section">
+      <h1>Desserts</h1>
+      <div id="product-list" class="product-grid"></div>
+    </section>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+    <aside class="cart-section">
+      <h2>Your Cart (<span id="cart-count">0</span>)</h2>
+      <div id="cart-items">
+        <div class="empty-cart">
+          <img src="./assets/images/illustration-empty-cart.svg" alt="">
+          <p>Your added items will appear here</p>
+        </div>
+      </div>
+      <div id="cart-total-container" class="hidden">
+        <div class="total-row">
+          <span>Order Total</span>
+          <strong id="order-total">$0.00</strong>
+        </div>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+        <div class="carbon-neutral-badge">
+          <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+          <p>This is a <strong>carbon-neutral</strong> delivery</p>
+        </div>
+        <button id="confirm-order" class="confirm-order-btn">Confirm Order</button>
+      </div>
+    </aside>
+  </main>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal-content">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="Success icon">
+      <h1>Order Confirmed</h1>
+      <p class="modal-subtitle">We hope you enjoy your food!</p>
+    
+      <div class="modal-order-summary">
+        <div id="modal-item-list" class="modal-item-list">
+        </div>
 
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
+        <div class="modal-total-container">
+          <span>Order Total</span>
+          <strong id="modal-total-price">$0.00</strong>
+        </div>
+      </div>
 
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+      <button id="new-order-btn" class="new-order-btn">Start New Order</button>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://x.com/Paul_codes1">Paul Ofili</a>.
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
