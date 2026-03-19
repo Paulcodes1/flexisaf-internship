@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Text Generator</title>
+</head>
+<body>
+  <div class="generator-container">
+    <h1>Text Generator</h1>
+    
+    <div class="controls">
+      <p>I need</p>
+      <input type="number" id="amount" value="3" min="1" max="20">
+        
+      <select id="type">
+        <option value="words">Words</option>
+        <option value="sentences">Sentences</option>
+        <option value="paragraphs">Paragraphs</option>
+      </select>
+        
+      <button id="generate-btn">Generate</button>
+    </div>
+
+    <div id="result-area" class="result-box">
+      Your generated text will appear here...
+    </div>
+    
+    <button id="copy-btn">Copy to Clipboard</button>
+  </div>
+
+ <script src="./script.js"></script> 
+</body>
+</html>

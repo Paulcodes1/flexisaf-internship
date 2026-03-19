@@ -1,0 +1,67 @@
+:root {
+    --primary: #B388EB; /* Lavender */
+    --secondary: #8093F1; /* Soft Blue */
+    --bg: #f8f9fa;
+    --text: #2d3436;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.generator-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(128, 147, 241, 0.2);
+    width: 90%;
+    max-width: 600px;
+    border-top: 8px solid var(--primary);
+}
+
+h1 { color: var(--secondary); text-align: center; }
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    outline: none;
+}
+
+#generate-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.result-box {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 20px;
+    min-height: 200px;
+    line-height: 1.6;
+    color: var(--text);
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+#copy-btn {
+    background: var(--secondary);
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
